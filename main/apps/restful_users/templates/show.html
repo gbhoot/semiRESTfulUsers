@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Users - {{ user.first_name }}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" 
+        crossorigin="anonymous">
+</head>
+
+<body class="bg-dark pt-4">
+    <div class="container text-light">
+        <div class="row d-flex justify-content-center my-3">
+            <h4>User {{ user.id }}</h4>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-2"></div>
+            <div class="col text-right"><h6>Full Name:</h6></div>
+            <div class="col-md-1"></div>
+            <div class="col">{{ user.first_name }} {{ user.last_name }}</div>
+            <div class="col-md-2"></div>
+        </div>
+ 
+        <div class="row my-2">
+            <div class="col-md-2"></div>
+            <div class="col text-right"><h6>Email:</h6></div>
+            <div class="col-md-1"></div>
+            <div class="col">{{ user.email }}</div>
+            <div class="col-md-2"></div>
+        </div>
+ 
+        <div class="row my-2">
+            <div class="col-md-2"></div>
+            <div class="col text-right"><h6>Created At:</h6></div>
+            <div class="col-md-1"></div>
+            <div class="col">{{ user.created_at }}</div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-2"></div>
+            <div class="col text-right">
+                <a href="edit">
+                    <button class="btn btn-outline-warning">Edit</button>
+                </a>
+            </div>
+            <div class="col-md-1 text-center mt-1">|</div>
+            <div class="col">
+                <a href="delete">
+                    <button class="btn btn-outline-danger">Delete</button>
+                </a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-2"></div>
+            <div class="col text-center">
+                <a href="/">
+                    <button class="btn btn-outline-primary">Back</button>
+                </a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" 
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" 
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
